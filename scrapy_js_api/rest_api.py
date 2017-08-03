@@ -23,10 +23,10 @@ from logging.handlers import RotatingFileHandler
 
 # 日志级别设置
 logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
-                    datefmt='%Y-%m-%d %H:%M',
-                    filename='spider_server.log',
-                    filemode='w')
+                    format=u'%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+                    datefmt=u'%Y-%m-%d %H:%M',
+                    filename=u'spider_server.log',
+                    filemode=u'w')
 
 # 将屏幕打印日志信息
 console = logging.StreamHandler()
@@ -36,7 +36,7 @@ console.setFormatter(formatter)
 logging.getLogger('').addHandler(console)
 
 # 日志备份
-Rthandler = RotatingFileHandler('spider_server.log', maxBytes=50 * 1024 * 1024, backupCount=5)
+Rthandler = RotatingFileHandler(u'spider_server.log', maxBytes=50 * 1024 * 1024, backupCount=5)
 Rthandler.setLevel(logging.INFO)
 formatter = logging.Formatter(u'用户:%(name)-6s 日志级别: %(levelname)-8s 任务消息:%(message)s')
 Rthandler.setFormatter(formatter)

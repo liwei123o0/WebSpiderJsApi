@@ -1,35 +1,89 @@
-2017-08-03 17:14 Selenium_Spider.py[line:38] INFO 线程9800 Thread-1: 等待分配工作!
-2017-08-03 17:14 Selenium_Spider.py[line:38] INFO 线程11436 Thread-2: 等待分配工作!
-2017-08-03 17:14 Selenium_Spider.py[line:38] INFO 线程1280 Thread-3: 等待分配工作!
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session {"requiredCapabilities": {}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/timeouts/implicit_wait {"sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "ms": 10000.0}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/timeouts {"sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "type": "page load", "ms": 10000.0}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/timeouts/async_script {"sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "ms": 10000.0}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 Selenium_Spider.py[line:56] INFO 默认状态启动!
-2017-08-03 17:16 Selenium_Spider.py[line:57] INFO 启动任务:dfsdfasd1fdca32 ,任务名:people_gz
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/url {"url": "http://gz.people.com.cn/GB/344124/index.html", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2"}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/element {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a"}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/elements {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a//a"}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/url {"url": "http://gz.people.com.cn/GB/194827/index.html", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2"}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 Selenium_Spider.py[line:106] ERROR Message: {"errorMessage":"URL 'http://gz.people.com.cn/GB/194827/index.html' didn't load. Error: 'timeout'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"108","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:51482","User-Agent":"Python-urllib/2.7"},"httpVersion":"1.1","method":"POST","post":"{\"url\": \"http://gz.people.com.cn/GB/194827/index.html\", \"sessionId\": \"68e742d0-782c-11e7-8366-0996fe136ca2\"}","url":"/url","urlParsed":{"anchor":"","query":"","file":"url","directory":"/","path":"/url","relative":"/url","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/url","queryKey":{},"chunks":["url"]},"urlOriginal":"/session/68e742d0-782c-11e7-8366-0996fe136ca2/url"}}
-Screenshot: available via screen
-
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/url {"url": "http://gz.people.com.cn/GB/222152/index.html", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2"}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/element {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a"}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/elements {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a//a"}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/url {"url": "http://gz.people.com.cn/GB/222174/index.html", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2"}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/element {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a"}
-2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
-2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/elements {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a//a"}
+2017-08-03 17:22 Selenium_Spider.py[line:38] INFO 线程11356 Thread-1: 等待分配工作!
+2017-08-03 17:22 Selenium_Spider.py[line:38] INFO 线程4572 Thread-2: 等待分配工作!
+2017-08-03 17:22 Selenium_Spider.py[line:38] INFO 线程12712 Thread-3: 等待分配工作!
+2017-08-03 17:22 Selenium_Spider.py[line:41] INFO 启动:PhantomJS渲染引擎进行渲染!
+2017-08-03 17:22 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51857/wd/hub/session {"requiredCapabilities": {}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-08-03 17:22 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:22 Selenium_Spider.py[line:47] INFO 正在加载设置渲染引擎配置....
+2017-08-03 17:22 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51857/wd/hub/session/50fdc800-782d-11e7-98db-4117efaa0daf/timeouts/implicit_wait {"sessionId": "50fdc800-782d-11e7-98db-4117efaa0daf", "ms": 10000.0}
+2017-08-03 17:22 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:22 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51857/wd/hub/session/50fdc800-782d-11e7-98db-4117efaa0daf/timeouts {"sessionId": "50fdc800-782d-11e7-98db-4117efaa0daf", "type": "page load", "ms": 10000.0}
+2017-08-03 17:22 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:22 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51857/wd/hub/session/50fdc800-782d-11e7-98db-4117efaa0daf/timeouts/async_script {"sessionId": "50fdc800-782d-11e7-98db-4117efaa0daf", "ms": 10000.0}
+2017-08-03 17:22 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:22 Selenium_Spider.py[line:53] INFO 渲染引擎配置设置成功!默认超时设置10s
+2017-08-03 17:22 Selenium_Spider.py[line:60] INFO 默认状态启动!
+2017-08-03 17:22 Selenium_Spider.py[line:61] INFO 启动任务:dfsdfasd1fdca32 ,任务名:ncac_news
+2017-08-03 17:22 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51857/wd/hub/session/50fdc800-782d-11e7-98db-4117efaa0daf/url {"url": "http://www.ncac.gov.cn/chinacopyright/channels/518.html", "sessionId": "50fdc800-782d-11e7-98db-4117efaa0daf"}
+2017-08-03 17:22 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:22 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51857/wd/hub/session/50fdc800-782d-11e7-98db-4117efaa0daf/element {"using": "xpath", "sessionId": "50fdc800-782d-11e7-98db-4117efaa0daf", "value": "//span[@class='STYLE20']/a"}
+2017-08-03 17:22 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:22 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51857/wd/hub/session/50fdc800-782d-11e7-98db-4117efaa0daf/elements {"using": "xpath", "sessionId": "50fdc800-782d-11e7-98db-4117efaa0daf", "value": "//span[@class='STYLE20']/a//a"}
+2017-08-03 17:22 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:22 Selenium_Spider.py[line:64] INFO 任务完成:dfsdfasd1fdca32 ,任务名:ncac_news
+2017-08-03 17:22 remote_connection.py[line:415] DEBUG DELETE http://127.0.0.1:51857/wd/hub/session/50fdc800-782d-11e7-98db-4117efaa0daf {"sessionId": "50fdc800-782d-11e7-98db-4117efaa0daf"}
+2017-08-03 17:22 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:23 Selenium_Spider.py[line:44] INFO 启动:Firefox渲染引擎进行渲染!
+2017-08-03 17:23 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51915/hub/session {"requiredCapabilities": {}, "desiredCapabilities": {"binary": "D:\\Program Files\\Mozilla Firefox\\firefox.exe", "javascriptEnabled": true, "firefox_profile": "UEsDBBQAAAAIAPKKA0tzE2597wMAAOsOAAAHAAAAdXNlci5qc51XTW/bOBC9F9j/UOS0BWoiadpL95SmKbBA0SxqBDkSFDmyGFMklx9W/O93SFmI7ZiiszdR4pAzb968GUUPjloH7Z8XggXmwBoXpF4Ra5TkW5JeLmPTS++l0f/klzecgw0gLj6+b5ny8OGvP97FvXNMT3r2THnnTA/UcydtoC5qGmQPaHR9eWQxQCOc3OAaNGsUUM0CLilsQAePFsHF41uCMWotA9EQBuPWPdNsBY4I6dMJp2088Ohk2JKBOU03EgaMlPbyGQTxnRmo0RwKUT2xDRtDIcYGxMJnk7/1LT6a0o3wHED7vDtaxBLIGGEJu0MPMXpwycUB2Lpg0Tgz4IrcPfy8IdeEveTmhDvM2vP8mNANoKCH4LbEwRPw4sGTFx6Y493ujorHnrWQnxPdeqYw5Jpbu2STLgSbOLbgRmt0KwG8sOAWuBVphNZXxxw7RFYB2yRg81uoJv+wNDpgKnTjmqQbJQfSSufD76gLJ7xQnHkfsSyiRhg9AkqxtGL2eQ5XvD9ESyySHHe+JbhzeGPQMSdFgcTT1sAan2+41/cWSpG+UCFLhg8GAXaQg25RESh3zHcF49f1ok2Q7fbBZ4RmS4Z7u6NPxbMkUFj5wgxExN7ucW6+gnkHfH1reovq1EiV7tRy1QW1rUGxy16HerjL4AVrTAxfG8X0+qJgpjB+h7pZKYpJb88Q2mNHUFgUTyIdnao4JWCTRMETdMk4PorePHQzclsBzLStkrqUx7koCBNCJj1gtYAOtMR20nfbRfpssUAXCvQqJJJ++vKl3Ahmo7fIdRt8qhraG8FULY1ljVFmtUovd6jfzZ5zUl7nr362EuuUKUW8XGHvRdXwWLL/Runq13SAdrk0vkPLogrfxi9v63CzWvW6G721e43JyAafiqowaGWYINMokZrCYwd6meiGPs6U327qoAZlkYqYI0pnVbBDjq9Jtkkq40bOlvzTMCCVEt//P5GmZnXmENJKBfiE+uUkD9Q4iTSk42RYCc0BEwlUCHlq+JG64w16xM+YlBpl+FpJH86cBsaELXaisUAmh+jfDk60KWXzxbXn5VSUsyKwN3CxGEwJcKw6oxGzHvoG3DIvSxHMjIjVOeY18ZBVYys8wby9YJPz30eSLzka+lMj1iFTSb2nzGpBfSjDwhtTR1G66JPHKkrDrxyxO5GNF50bOonikChWkbm9uS1P1ntzGwdX+jk5MTHdKuOLDe0AB59+twJFV+c08Yy/tXkqT+WCFMX8KoVgN1sqRg2vNPRJGI4V4bo4C6rWRzuW2UiL0tCDr8S9fsyc9FeXRCLe5uH3zzNnJlRiq9gWxN3V5fIXzo6ZPp/T7v8AUEsBAhQAFAAAAAgA8ooDS3MTbn3vAwAA6w4AAAcAAAAAAAAAAAAAALaBAAAAAHVzZXIuanNQSwUGAAAAAAEAAQA1AAAAFAQAAAAA", "args": [], "platform": "ANY", "browserName": "firefox", "version": "", "marionette": false}}
+2017-08-03 17:23 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:23 Selenium_Spider.py[line:47] INFO 正在加载设置渲染引擎配置....
+2017-08-03 17:23 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51915/hub/session/ae298de9-ec6f-46e9-900a-e53e534d1fd0/timeouts/implicit_wait {"sessionId": "ae298de9-ec6f-46e9-900a-e53e534d1fd0", "ms": 10000.0}
+2017-08-03 17:23 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:23 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51915/hub/session/ae298de9-ec6f-46e9-900a-e53e534d1fd0/timeouts {"sessionId": "ae298de9-ec6f-46e9-900a-e53e534d1fd0", "type": "page load", "ms": 10000.0}
+2017-08-03 17:23 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:23 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51915/hub/session/ae298de9-ec6f-46e9-900a-e53e534d1fd0/timeouts/async_script {"sessionId": "ae298de9-ec6f-46e9-900a-e53e534d1fd0", "ms": 10000.0}
+2017-08-03 17:23 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:23 Selenium_Spider.py[line:53] INFO 渲染引擎配置设置成功!默认超时设置10s
+2017-08-03 17:23 Selenium_Spider.py[line:60] INFO 默认状态启动!
+2017-08-03 17:23 Selenium_Spider.py[line:61] INFO 启动任务:dfsdfasd1fdca32 ,任务名:ncac_news
+2017-08-03 17:23 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51915/hub/session/ae298de9-ec6f-46e9-900a-e53e534d1fd0/url {"url": "http://www.ncac.gov.cn/chinacopyright/channels/518.html", "sessionId": "ae298de9-ec6f-46e9-900a-e53e534d1fd0"}
+2017-08-03 17:23 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:23 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51915/hub/session/ae298de9-ec6f-46e9-900a-e53e534d1fd0/element {"using": "xpath", "sessionId": "ae298de9-ec6f-46e9-900a-e53e534d1fd0", "value": "//span[@class='STYLE20']/a"}
+2017-08-03 17:23 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:23 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51915/hub/session/ae298de9-ec6f-46e9-900a-e53e534d1fd0/elements {"using": "xpath", "sessionId": "ae298de9-ec6f-46e9-900a-e53e534d1fd0", "value": "//span[@class='STYLE20']/a//a"}
+2017-08-03 17:23 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:23 Selenium_Spider.py[line:64] INFO 任务完成:dfsdfasd1fdca32 ,任务名:ncac_news
+2017-08-03 17:23 remote_connection.py[line:415] DEBUG DELETE http://127.0.0.1:51915/hub/session/ae298de9-ec6f-46e9-900a-e53e534d1fd0 {"sessionId": "ae298de9-ec6f-46e9-900a-e53e534d1fd0"}
+2017-08-03 17:23 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:25 Selenium_Spider.py[line:44] INFO 启动:Firefox渲染引擎进行渲染!
+2017-08-03 17:25 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session {"requiredCapabilities": {}, "desiredCapabilities": {"binary": "D:\\Program Files\\Mozilla Firefox\\firefox.exe", "javascriptEnabled": true, "firefox_profile": "UEsDBBQAAAAIADOLA0tzE2597wMAAOsOAAAHAAAAdXNlci5qc51XTW/bOBC9F9j/UOS0BWoiadpL95SmKbBA0SxqBDkSFDmyGFMklx9W/O93SFmI7ZiiszdR4pAzb968GUUPjloH7Z8XggXmwBoXpF4Ra5TkW5JeLmPTS++l0f/klzecgw0gLj6+b5ny8OGvP97FvXNMT3r2THnnTA/UcydtoC5qGmQPaHR9eWQxQCOc3OAaNGsUUM0CLilsQAePFsHF41uCMWotA9EQBuPWPdNsBY4I6dMJp2088Ohk2JKBOU03EgaMlPbyGQTxnRmo0RwKUT2xDRtDIcYGxMJnk7/1LT6a0o3wHED7vDtaxBLIGGEJu0MPMXpwycUB2Lpg0Tgz4IrcPfy8IdeEveTmhDvM2vP8mNANoKCH4LbEwRPw4sGTFx6Y493ujorHnrWQnxPdeqYw5Jpbu2STLgSbOLbgRmt0KwG8sOAWuBVphNZXxxw7RFYB2yRg81uoJv+wNDpgKnTjmqQbJQfSSufD76gLJ7xQnHkfsSyiRhg9AkqxtGL2eQ5XvD9ESyySHHe+JbhzeGPQMSdFgcTT1sAan2+41/cWSpG+UCFLhg8GAXaQg25RESh3zHcF49f1ok2Q7fbBZ4RmS4Z7u6NPxbMkUFj5wgxExN7ucW6+gnkHfH1reovq1EiV7tRy1QW1rUGxy16HerjL4AVrTAxfG8X0+qJgpjB+h7pZKYpJb88Q2mNHUFgUTyIdnao4JWCTRMETdMk4PorePHQzclsBzLStkrqUx7koCBNCJj1gtYAOtMR20nfbRfpssUAXCvQqJJJ++vKl3Ahmo7fIdRt8qhraG8FULY1ljVFmtUovd6jfzZ5zUl7nr362EuuUKUW8XGHvRdXwWLL/Runq13SAdrk0vkPLogrfxi9v63CzWvW6G721e43JyAafiqowaGWYINMokZrCYwd6meiGPs6U327qoAZlkYqYI0pnVbBDjq9Jtkkq40bOlvzTMCCVEt//P5GmZnXmENJKBfiE+uUkD9Q4iTSk42RYCc0BEwlUCHlq+JG64w16xM+YlBpl+FpJH86cBsaELXaisUAmh+jfDk60KWXzxbXn5VSUsyKwN3CxGEwJcKw6oxGzHvoG3DIvSxHMjIjVOeY18ZBVYys8wby9YJPz30eSLzka+lMj1iFTSb2nzGpBfSjDwhtTR1G66JPHKkrDrxyxO5GNF50bOonikChWkbm9uS1P1ntzGwdX+jk5MTHdKuOLDe0AB59+twJFV+c08Yy/tXkqT+WCFMX8KoVgN1sqRg2vNPRJGI4V4bo4C6rWRzuW2UiL0tCDr8S9fsyc9FeXRCLe5uH3zzNnJlRiq9gWxN3V5fIXzo6ZPp/T7v8AUEsBAhQAFAAAAAgAM4sDS3MTbn3vAwAA6w4AAAcAAAAAAAAAAAAAALaBAAAAAHVzZXIuanNQSwUGAAAAAAEAAQA1AAAAFAQAAAAA", "args": [], "platform": "ANY", "browserName": "firefox", "version": "", "marionette": false}}
+2017-08-03 17:25 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:25 Selenium_Spider.py[line:47] INFO 正在加载设置渲染引擎配置....
+2017-08-03 17:25 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188/timeouts/implicit_wait {"sessionId": "576ca178-748a-4383-9550-afc234161188", "ms": 10000.0}
+2017-08-03 17:25 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:25 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188/timeouts {"sessionId": "576ca178-748a-4383-9550-afc234161188", "type": "page load", "ms": 10000.0}
+2017-08-03 17:25 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:25 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188/timeouts/async_script {"sessionId": "576ca178-748a-4383-9550-afc234161188", "ms": 10000.0}
+2017-08-03 17:25 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:25 Selenium_Spider.py[line:53] INFO 渲染引擎配置设置成功!默认超时设置10s
+2017-08-03 17:25 Selenium_Spider.py[line:60] INFO 默认状态启动!
+2017-08-03 17:25 Selenium_Spider.py[line:61] INFO 启动任务:dfsdfasd1fdca32 ,任务名:gzcx
+2017-08-03 17:25 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188/url {"url": "http://www.gzcx.gov.cn/a/xinyonggongshi/gongfaxinxi/list_60_1.html", "sessionId": "576ca178-748a-4383-9550-afc234161188"}
+2017-08-03 17:25 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:25 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188/element {"using": "xpath", "sessionId": "576ca178-748a-4383-9550-afc234161188", "value": "//div[@class='list_right_list_main']/ul/li/span/a"}
+2017-08-03 17:25 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:25 Selenium_Spider.py[line:117] ERROR Message: 
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/xbzx/appdata/local/temp/tmpxgwuqh/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///c:/users/xbzx/appdata/local/temp/tmpxgwuqh/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+2017-08-03 17:25 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188/url {"url": "http://www.gzcx.gov.cn/a/xinyonggongshi/gongfaxinxi/list_60_2.html", "sessionId": "576ca178-748a-4383-9550-afc234161188"}
+2017-08-03 17:25 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:25 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188/element {"using": "xpath", "sessionId": "576ca178-748a-4383-9550-afc234161188", "value": "//div[@class='list_right_list_main']/ul/li/span/a"}
+2017-08-03 17:26 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:26 Selenium_Spider.py[line:117] ERROR Message: 
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/xbzx/appdata/local/temp/tmpxgwuqh/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///c:/users/xbzx/appdata/local/temp/tmpxgwuqh/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+2017-08-03 17:26 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188/url {"url": "http://www.gzcx.gov.cn/a/xinyonggongshi/gongfaxinxi/list_60_3.html", "sessionId": "576ca178-748a-4383-9550-afc234161188"}
+2017-08-03 17:26 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:26 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188/element {"using": "xpath", "sessionId": "576ca178-748a-4383-9550-afc234161188", "value": "//div[@class='list_right_list_main']/ul/li/span/a"}
+2017-08-03 17:26 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:26 Selenium_Spider.py[line:117] ERROR Message: 
+Stacktrace:
+    at FirefoxDriver.prototype.findElementInternal_ (file:///c:/users/xbzx/appdata/local/temp/tmpxgwuqh/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+    at fxdriver.Timer.prototype.setTimeout/<.notify (file:///c:/users/xbzx/appdata/local/temp/tmpxgwuqh/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+2017-08-03 17:26 Selenium_Spider.py[line:64] INFO 任务完成:dfsdfasd1fdca32 ,任务名:gzcx
+2017-08-03 17:26 remote_connection.py[line:415] DEBUG DELETE http://127.0.0.1:52054/hub/session/576ca178-748a-4383-9550-afc234161188 {"sessionId": "576ca178-748a-4383-9550-afc234161188"}
+2017-08-03 17:26 remote_connection.py[line:510] DEBUG Finished Request
+extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+用户:root   日志级别: INFO     任务消息:任务完成:dfsdfasd1fdca32 ,任务名:gzcx

@@ -38,11 +38,11 @@ class Selenium_Spider(threading.Thread):
             logging.info(u"线程%d %s: 等待分配工作!" % (self.ident, self.name))
             self.task = self.queue.get(block=True)  # 接收消息
             if self.task["webdriver"].lower() == "phantomjs":
-                self.driver = webdriver.PhantomJS()
                 logging.info(u"启动:PhantomJS渲染引擎进行渲染!")
+                self.driver = webdriver.PhantomJS()
             else:
-                self.driver = webdriver.Firefox()
                 logging.info(u"启动:Firefox渲染引擎进行渲染!")
+                self.driver = webdriver.Firefox()
             # 隐式等待30秒
             logging.info(u"正在加载设置渲染引擎配置....")
             self.driver.implicitly_wait(10)
@@ -57,7 +57,7 @@ class Selenium_Spider(threading.Thread):
                 logging.info(u"代理状态启动!")
                 self.open_proxy()
             else:
-                logging.info(u"默认状态启动!")
+                logging.info(u"无代理状态启动!")
             logging.info(u"启动任务:%s ,任务名:%s" % (self.task["spider_jobid"], self.task["name_spider"]))
             # 采集启动
             self.get_spider()
@@ -209,5 +209,8 @@ class Selenium_Spider(threading.Thread):
     # 关闭爬虫
     def close_spider(self):
         self.driver.quit()
-        self.cur.close()
-        self.conn.close()
+        try:
+            self.cur.close()
+            self.conn.close()
+        except:
+            pass
