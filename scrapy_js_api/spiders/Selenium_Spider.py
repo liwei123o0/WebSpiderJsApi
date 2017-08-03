@@ -45,12 +45,12 @@ class Selenium_Spider(threading.Thread):
                 self.driver = webdriver.Firefox()
             # 隐式等待30秒
             logging.info(u"正在加载设置渲染引擎配置....")
-            self.driver.implicitly_wait(10)
+            self.driver.implicitly_wait(30)
             # 图片加载超时设置
-            self.driver.set_page_load_timeout(10)
+            self.driver.set_page_load_timeout(30)
             # 脚本加载超时设置
-            self.driver.set_script_timeout(10)
-            logging.info(u"渲染引擎配置设置成功!默认超时设置10s")
+            self.driver.set_script_timeout(30)
+            logging.info(u"渲染引擎配置设置成功!默认超时设置30s")
             self.name_spider_config = mysql_spider(self.task["name_spider"])
             self.debug = self.task["debug"]
             if self.name_spider_config['proxy'].lower() == "true":
@@ -111,15 +111,17 @@ class Selenium_Spider(threading.Thread):
                 continue
             try:
                 wait = WebDriverWait(self.driver, 10)
-                rules_listxpath = json.loads(self.name_spider_config["rules"])["rules"]["rules_listxpath"]
+                rules_listxpath = json.loads(self.name_spider_config["rules"])["rules"]["rules_listxpath"].rstrip()
                 wait.until(EC.presence_of_element_located((By.XPATH, rules_listxpath)))
             except TimeoutException, e:
                 logging.error(e)
                 continue
-            if rules_listxpath[-3:] != "//a":
+            if rules_listxpath[-3:] == "//a":
+                pass
+            elif rules_listxpath[-2:] == "/a":
+                pass
+            else:
                 rules_listxpath += "//a"
-            elif rules_listxpath[-2:] != "/a":
-                rules_listxpath += "/a"
             urllist = self.driver.find_elements_by_xpath(rules_listxpath)
             # 获得详情页列表
             for urll in urllist:
