@@ -5,20 +5,8 @@
 @author:LiWei
 @license:LiWei
 @contact:877129310@qq.com
-@version:
-@var:
-@note:
-
-"""
-# -*- coding: utf-8 -*-
-# ! /usr/bin/env python
-
-"""
-@author:LiWei
-@license:LiWei
-@contact:877129310@qq.com
-@version:
-@var:
+@version:V1.0
+@var:基于selenumi做javascript渲染爬虫api接口
 @note:
 
 """
@@ -74,17 +62,19 @@ class WebSpiderJsApi(APIResource):
         spider_jobid = request.args['spider_jobid'][0]
         project = request.args['project'][0]
         spider_type = request.args['spider_type'][0]
+        webdriver = request.args["webdriver"][0]
         try:
             debug = request.args['debug'][0]
         except:
             debug = "False"
         self.q.put({"name_spider": name_spider, "spider_jobid": spider_jobid,
-                    "project ": project, "spider_type": spider_type, "debug": debug},
+                    "project ": project, "spider_type": spider_type,
+                    "webdriver": webdriver, "debug": debug},
                    block=True, timeout=None)  # 产生任务消息
 
         return json.dumps({"status": "ok", "name_spider": name_spider,
                            "spider_jobid": spider_jobid, "project ": project,
-                           "spider_type": spider_type, "debug": debug})
+                           "spider_type": spider_type, "debug": debug, "webdriver": webdriver})
 
 
 if __name__ == "__main__":

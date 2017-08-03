@@ -17,7 +17,7 @@ import logging
 
 
 def load_configs():
-    with open("E:\\basespider\\scrapy_js_api\\restapi_config.json", "rb")as f:
+    with open("restapi_config.json", "rb")as f:
         txt = f.read()
     txt = json.loads(txt)
     return txt

@@ -1,0 +1,35 @@
+2017-08-03 17:14 Selenium_Spider.py[line:38] INFO 线程9800 Thread-1: 等待分配工作!
+2017-08-03 17:14 Selenium_Spider.py[line:38] INFO 线程11436 Thread-2: 等待分配工作!
+2017-08-03 17:14 Selenium_Spider.py[line:38] INFO 线程1280 Thread-3: 等待分配工作!
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session {"requiredCapabilities": {}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/timeouts/implicit_wait {"sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "ms": 10000.0}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/timeouts {"sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "type": "page load", "ms": 10000.0}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/timeouts/async_script {"sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "ms": 10000.0}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 Selenium_Spider.py[line:56] INFO 默认状态启动!
+2017-08-03 17:16 Selenium_Spider.py[line:57] INFO 启动任务:dfsdfasd1fdca32 ,任务名:people_gz
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/url {"url": "http://gz.people.com.cn/GB/344124/index.html", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2"}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/element {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a"}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/elements {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a//a"}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/url {"url": "http://gz.people.com.cn/GB/194827/index.html", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2"}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 Selenium_Spider.py[line:106] ERROR Message: {"errorMessage":"URL 'http://gz.people.com.cn/GB/194827/index.html' didn't load. Error: 'timeout'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"108","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:51482","User-Agent":"Python-urllib/2.7"},"httpVersion":"1.1","method":"POST","post":"{\"url\": \"http://gz.people.com.cn/GB/194827/index.html\", \"sessionId\": \"68e742d0-782c-11e7-8366-0996fe136ca2\"}","url":"/url","urlParsed":{"anchor":"","query":"","file":"url","directory":"/","path":"/url","relative":"/url","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/url","queryKey":{},"chunks":["url"]},"urlOriginal":"/session/68e742d0-782c-11e7-8366-0996fe136ca2/url"}}
+Screenshot: available via screen
+
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/url {"url": "http://gz.people.com.cn/GB/222152/index.html", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2"}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/element {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a"}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/elements {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a//a"}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/url {"url": "http://gz.people.com.cn/GB/222174/index.html", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2"}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/element {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a"}
+2017-08-03 17:16 remote_connection.py[line:510] DEBUG Finished Request
+2017-08-03 17:16 remote_connection.py[line:415] DEBUG POST http://127.0.0.1:51482/wd/hub/session/68e742d0-782c-11e7-8366-0996fe136ca2/elements {"using": "xpath", "sessionId": "68e742d0-782c-11e7-8366-0996fe136ca2", "value": "//div[@class='hdNews clearfix']//strong/a//a"}

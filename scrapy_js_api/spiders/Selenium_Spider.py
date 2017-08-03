@@ -20,7 +20,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 import datetime, logging
 import threading
-import uuid, random, MySQLdb, json
+import random, MySQLdb, json
 from scrapy_js_api.utils.middlewares import mysql_spider, load_configs
 from scrapy_js_api.utils.date_parse import parse_date
 
@@ -29,36 +29,40 @@ class Selenium_Spider(threading.Thread):
     def __init__(self, queue):
         self.queue = queue
         self.idx = 1
-        self.uuid = uuid.uuid1().hex
         self.mysql_config = load_configs()['mysql']
-        self.error_url = []
-        self.timeout = 10
         super(Selenium_Spider, self).__init__()
 
     # 运行
     def run(self):
         while 1:
-            self.driver = webdriver.Firefox()
+            logging.info(u"线程%d %s: 等待分配工作!" % (self.ident, self.name))
+            self.task = self.queue.get(block=True)  # 接收消息
+            if self.task["webdriver"].lower() == "phantomjs":
+                self.driver = webdriver.PhantomJS()
+                logging.info(u"启动:PhantomJS渲染引擎进行渲染!")
+            else:
+                self.driver = webdriver.Firefox()
+                logging.info(u"启动:Firefox渲染引擎进行渲染!")
             # 隐式等待30秒
+            logging.info(u"正在加载设置渲染引擎配置....")
             self.driver.implicitly_wait(10)
             # 图片加载超时设置
             self.driver.set_page_load_timeout(10)
             # 脚本加载超时设置
             self.driver.set_script_timeout(10)
-            logging.info(u"线程%d %s: 等待分配工作!" % (self.ident, self.name))
-            task = self.queue.get(block=True)  # 接收消息
-            self.name_spider_config = mysql_spider(task["name_spider"])
-            self.debug = task["debug"]
+            logging.info(u"渲染引擎配置设置成功!默认超时设置10s")
+            self.name_spider_config = mysql_spider(self.task["name_spider"])
+            self.debug = self.task["debug"]
             if self.name_spider_config['proxy'].lower() == "true":
                 logging.info(u"代理状态启动!")
                 self.open_proxy()
             else:
                 logging.info(u"默认状态启动!")
-            logging.info(u"启动任务:%s ,任务名:%s" % (task["spider_jobid"], task["name_spider"]))
-
+            logging.info(u"启动任务:%s ,任务名:%s" % (self.task["spider_jobid"], self.task["name_spider"]))
+            # 采集启动
             self.get_spider()
-
-            logging.info(u"任务完成:%s ,任务名:%s" % (task["spider_jobid"], task["name_spider"]))
+            logging.info(u"任务完成:%s ,任务名:%s" % (self.task["spider_jobid"], self.task["name_spider"]))
+            # 关闭javascript渲染
             self.close_spider()
             self.queue.task_done()  # 完成一个任务
             res = self.queue.qsize()  # 判断消息队列大小
@@ -84,12 +88,15 @@ class Selenium_Spider(threading.Thread):
         # 随机添加
         logging.warning(u"随机切换代理ip:%s") % self.proxy
         self.proxyip.http_proxy = self.proxy
-        # # 将代理设置添加到webdriver.DesiredCapabilities.PHANTOMJS中
-        # # self.proxyip.add_to_capabilities(DesiredCapabilities.PHANTOMJS)
-        # # self.driver.start_session(DesiredCapabilities.PHANTOMJS)
-        # # 将代理设置添加到webdriver.DesiredCapabilities.FIREFOX中
-        self.proxyip.add_to_capabilities(DesiredCapabilities.FIREFOX)
-        self.driver.start_session(DesiredCapabilities.FIREFOX)
+
+        if self.task["webdriver"].lower() == "phantomjs":
+            # 将代理设置添加到webdriver.DesiredCapabilities.PHANTOMJS中
+            self.proxyip.add_to_capabilities(DesiredCapabilities.PHANTOMJS)
+            self.driver.start_session(DesiredCapabilities.PHANTOMJS)
+        else:
+            # 将代理设置添加到webdriver.DesiredCapabilities.FIREFOX中
+            self.proxyip.add_to_capabilities(DesiredCapabilities.FIREFOX)
+            self.driver.start_session(DesiredCapabilities.FIREFOX)
 
     # get_spider 采集器
     def get_spider(self):
