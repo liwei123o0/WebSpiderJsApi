@@ -1,13 +1,201 @@
-[INFO  - 2017-08-03T09:57:21.929Z] GhostDriver - Main - running on port 54446
-[INFO  - 2017-08-03T09:57:25.230Z] Session [26c54590-7832-11e7-b5b4-f7b6fa62f728] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-08-03T09:57:25.230Z] Session [26c54590-7832-11e7-b5b4-f7b6fa62f728] - page.customHeaders:  - {}
-[INFO  - 2017-08-03T09:57:25.230Z] Session [26c54590-7832-11e7-b5b4-f7b6fa62f728] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2017-08-03T09:57:25.230Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 26c54590-7832-11e7-b5b4-f7b6fa62f728
-[ERROR - 2017-08-03T09:57:26.299Z] Session [26c54590-7832-11e7-b5b4-f7b6fa62f728] - page.onError - msg: TypeError: undefined is not an object (evaluating 'url.toLowerCase')
+[INFO  - 2017-08-03T11:51:08.100Z] GhostDriver - Main - running on port 61527
+[INFO  - 2017-08-03T11:51:09.194Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-03T11:51:09.194Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.customHeaders:  - {}
+[INFO  - 2017-08-03T11:51:09.195Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-03T11:51:09.195Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec
+[ERROR - 2017-08-03T11:51:10.959Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-08-03T09:57:26.299Z] Session [26c54590-7832-11e7-b5b4-f7b6fa62f728] - page.onError - stack:
-  clientInfo (http://edu.youth.cn/images/wb.js:1)
-  (anonymous function) (http://edu.youth.cn/images/wb.js:1)
+[ERROR - 2017-08-03T11:51:10.959Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276349.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:11.948Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:11.949Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276291.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:12.731Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:12.731Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276269.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:13.572Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:13.572Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276247.shtml:19)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:14.576Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:14.576Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276245.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:14.659Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: TypeError: undefined is not an object (evaluating 'jsq1.document.body')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:14.659Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  onload (http://www.jhx.gov.cn/zwyw/jrjh/276245.shtml:435)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:15.103Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:15.103Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276240.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:15.959Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:15.959Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276239.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:16.474Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:16.474Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276214.shtml:19)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:16.577Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: TypeError: undefined is not an object (evaluating 'jsq1.document.body')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:16.578Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  onload (http://www.jhx.gov.cn/zwyw/jrjh/276214.shtml:438)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:17.262Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:17.262Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276184.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:17.846Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:17.846Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276183.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:18.422Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:18.423Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276172.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:19.100Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:19.100Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276161.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:19.956Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:19.956Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276122.shtml:19)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:20.815Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:20.815Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276173.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:21.635Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:21.635Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276132.shtml:19)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:22.102Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:22.102Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276131.shtml:19)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:22.972Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:22.972Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276102.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:23.811Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:23.811Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276101.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:24.688Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:24.688Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276100.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:25.605Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:25.605Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276087.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:26.954Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:26.955Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276055.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:27.918Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:27.918Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276054.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:28.729Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:28.729Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276053.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:29.519Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:29.519Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276052.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:29.998Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:29.998Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276051.shtml:17)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:30.508Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - msg: ReferenceError: Can't find variable: getCookie
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-08-03T11:51:30.508Z] Session [0a2b8b50-7842-11e7-b3b5-d9cb1773d9ec] - page.onError - stack:
+  global code (http://www.jhx.gov.cn/zwyw/jrjh/276039.shtml:17)
 
   phantomjs://platform/console++.js:263 in error

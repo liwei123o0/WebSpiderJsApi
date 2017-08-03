@@ -127,6 +127,7 @@ class Selenium_Spider(threading.Thread):
             for urll in urllist:
                 urll = urll.get_attribute("href")
                 uris.append(urll)
+            logging.info(u"列表页解析完成!%s" % str(uris))
             for uri in uris:
                 try:
                     self.driver.get(uri)
@@ -141,7 +142,6 @@ class Selenium_Spider(threading.Thread):
 
     # 内容解析
     def fields_item(self):
-        pass
         self.items = {}
         fields = json.loads(self.name_spider_config["fields"])["fields"]
         for k, v in fields.iteritems():
