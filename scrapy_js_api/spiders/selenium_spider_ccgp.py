@@ -179,42 +179,75 @@ class Selenium_Spider(object):
     # 结构化数据
     def pipelines(self):
         contents = self.items["content"].splitlines()
-
-        for c in contents:
-            if re.findall(r"\s+", c):
-                c = c.split(" ")
-            if c[0] == u"采购项目名称":
-                self.items["cgxmmc"] = c[1]
-            if c[0] == u"品目":
-                self.items["pm"] = c[1]
-            if c[0] == u"采购单位":
-                self.items["cgdw"] = c[1]
-            if c[0] == u"行政区域":
-                self.items["xzqy"] = c[1]
-            if c[0] == u"报名地点" or c[0] == u"开标地点":
-                self.items["bmdd"] = c[1]
-            if c[0] == u"开标时间" or c[0] == u"报名时间":
-                self.items["kbsj"] = c[1]
-            if c[0] == u"招标文件售价":
-                self.items["zbwjsj"] = c[1]
-            if c[0] == u"获取招标文件的地点":
-                self.items["hqzbwjdd"] = c[1]
-            if c[0] == u"预算金额":
-                self.items["ysje"] = c[1]
-            if c[0] == u"项目联系人":
-                self.items["xmlxr"] = c[1]
-            if c[0] == u"项目联系电话":
-                self.items["xmlxdh"] = c[1]
-            if c[0] == u"采购单位地址":
-                self.items["cgdwdz"] = c[1]
-            if c[0] == u"采购单位联系方式":
-                self.items["cgdwlxfs"] = c[1]
-            if c[0] == u"代理机构名称":
-                self.items["dljgmc"] = c[1]
-            if c[0] == u"代理机构地址":
-                self.items["dljgdz"] = c[1]
-            if c[0] == u"代理机构联系方式":
-                self.items["dljglxfs"] = c[1]
+        if self.conf.get("urllist").get("bidType") =="1":
+            for c in contents:
+                if re.findall(r"\s+", c):
+                    c = c.split(" ")
+                if c[0] == u"采购项目名称":
+                    self.items["cgxmmc"] = c[1]
+                if c[0] == u"品目":
+                    self.items["pm"] = c[1]
+                if c[0] == u"采购单位":
+                    self.items["cgdw"] = c[1]
+                if c[0] == u"行政区域":
+                    self.items["xzqy"] = c[1]
+                if c[0] == u"报名地点" or c[0] == u"开标地点":
+                    self.items["bmdd"] = c[1]
+                if c[0] == u"开标时间" or c[0] == u"报名时间":
+                    self.items["kbsj"] = c[1]
+                if c[0] == u"招标文件售价":
+                    self.items["zbwjsj"] = c[1]
+                if c[0] == u"获取招标文件的地点":
+                    self.items["hqzbwjdd"] = c[1]
+                if c[0] == u"预算金额":
+                    self.items["ysje"] = c[1]
+                if c[0] == u"项目联系人":
+                    self.items["xmlxr"] = c[1]
+                if c[0] == u"项目联系电话":
+                    self.items["xmlxdh"] = c[1]
+                if c[0] == u"采购单位地址":
+                    self.items["cgdwdz"] = c[1]
+                if c[0] == u"采购单位联系方式":
+                    self.items["cgdwlxfs"] = c[1]
+                if c[0] == u"代理机构名称":
+                    self.items["dljgmc"] = c[1]
+                if c[0] == u"代理机构地址":
+                    self.items["dljgdz"] = c[1]
+                if c[0] == u"代理机构联系方式":
+                    self.items["dljglxfs"] = c[1]
+        if self.conf.get("urllist").get("bidType") =="7":
+            for c in contents:
+                if re.findall(r"\s+", c):
+                    c = c.split(" ")
+                if c[0] == u"采购项目名称":
+                    self.items["cgxmmc"] = c[1]
+                if c[0] == u"品目":
+                    self.items["pm"] = c[1]
+                if c[0] == u"采购单位":
+                    self.items["cgdw"] = c[1]
+                if c[0] == u"行政区域":
+                    self.items["xzqy"] = c[1]
+                if c[0] == u"本项目招标公告日期":
+                    self.items["bxmzbggrq"] = c[1]
+                    self.items["zbrq"] = "".join(c[3:])
+                if c[0] == u"评审专家名单":
+                    self.items["zjpsmd"] = c[1]
+                if c[0] == u"总中标金额":
+                    self.items["zzbje"] = c[1]
+                if c[0] == u"项目联系人":
+                    self.items["xmlxr"] = c[1]
+                if c[0] == u"项目联系电话":
+                    self.items["xmlxdh"] = c[1]
+                if c[0] == u"采购单位地址":
+                    self.items["cgdwdz"] = c[1]
+                if c[0] == u"采购单位联系方式":
+                    self.items["cgdwlxfs"] = c[1]
+                if c[0] == u"代理机构名称":
+                    self.items["dljgmc"] = c[1]
+                if c[0] == u"代理机构地址":
+                    self.items["dljgdz"] = c[1]
+                if c[0] == u"代理机构联系方式":
+                    self.items["dljglxfs"] = c[1]
 
         self.items.pop("content")
 
