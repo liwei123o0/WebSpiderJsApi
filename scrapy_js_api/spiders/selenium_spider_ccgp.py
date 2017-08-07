@@ -27,6 +27,7 @@ import random
 import json
 import re
 
+
 class Selenium_Spider(object):
     # 启动js渲染
     def __init__(self, debug, proxy, path):
@@ -163,10 +164,10 @@ class Selenium_Spider(object):
                     v["xpath"].replace("//text()", "").replace("/text()", "")).text
             else:
                 self.items[k] = v["value"]
+        self.pipelines()
         self.items['url'] = driver.current_url
         self.items['spider_jobid'] = self.uuid
         self.items['net_spider_id'] = net_spider_id
-        self.pipelines(self.items)
         print u"{:=^30}".format(self.idx)
         if self.debug:
             for k, v in self.items.iteritems():
@@ -175,10 +176,47 @@ class Selenium_Spider(object):
             self.mysql_db()
         self.idx += 1
 
-    def pipelines(self, items):
-        pass
-        content = items["content"]
+    # 结构化数据
+    def pipelines(self):
+        contents = self.items["content"].splitlines()
 
+        for c in contents:
+            if re.findall(r"\s+", c):
+                c = c.split(" ")
+            if c[0] == u"采购项目名称":
+                self.items["cgxmmc"] = c[1]
+            if c[0] == u"品目":
+                self.items["pm"] = c[1]
+            if c[0] == u"采购单位":
+                self.items["cgdw"] = c[1]
+            if c[0] == u"行政区域":
+                self.items["xzqy"] = c[1]
+            if c[0] == u"报名地点" or c[0] == u"开标地点":
+                self.items["bmdd"] = c[1]
+            if c[0] == u"开标时间" or c[0] == u"报名时间":
+                self.items["kbsj"] = c[1]
+            if c[0] == u"招标文件售价":
+                self.items["zbwjsj"] = c[1]
+            if c[0] == u"获取招标文件的地点":
+                self.items["hqzbwjdd"] = c[1]
+            if c[0] == u"预算金额":
+                self.items["ysje"] = c[1]
+            if c[0] == u"项目联系人":
+                self.items["xmlxr"] = c[1]
+            if c[0] == u"项目联系电话":
+                self.items["xmlxdh"] = c[1]
+            if c[0] == u"采购单位地址":
+                self.items["cgdwdz"] = c[1]
+            if c[0] == u"采购单位联系方式":
+                self.items["cgdwlxfs"] = c[1]
+            if c[0] == u"代理机构名称":
+                self.items["dljgmc"] = c[1]
+            if c[0] == u"代理机构地址":
+                self.items["dljgdz"] = c[1]
+            if c[0] == u"代理机构联系方式":
+                self.items["dljglxfs"] = c[1]
+
+        self.items.pop("content")
 
     # 入库
     def mysql_db(self):
@@ -239,5 +277,5 @@ class Selenium_Spider(object):
 
 if __name__ == '__main__':
     pass
-    Selenium_Spider(debug=True, proxy=False, path="../configs/ccgp_gy.json").run()
-    re.findall()
+    # Selenium_Spider(debug=False, proxy=False, path="../configs/ccgp_gy_zhaob.json").run()
+    Selenium_Spider(debug=False, proxy=False, path="../configs/ccgp_gy_zb.json").run()

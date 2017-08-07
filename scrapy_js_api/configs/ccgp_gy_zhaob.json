@@ -2,11 +2,12 @@
   "urllist": {
     "pg": 1,
     "pages": [
-      5
+      3
     ],
+    "bidType":"1",
     "time_day": 3,
     "urls": [
-      "http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index={page_index}&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=0&dbselect=bidx&kw=&start_time={today}&end_time={day}&timeType=1&displayZone=%E8%B4%B5%E5%B7%9E%E7%9C%81&zoneId=52&pppStatus=0&agentName="
+      "http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index={page_index}&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=1&dbselect=bidx&kw=&start_time={today}&end_time={day}&timeType=1&displayZone=%E8%B4%B5%E5%B7%9E%E7%9C%81&zoneId=52&pppStatus=0&agentName="
     ],
     "rep": ""
   },
@@ -24,15 +25,15 @@
     "port": 3306,
     "user": "root",
     "passwd": "root",
-    "tablename": "net_guiyangnews",
+    "tablename": "net_ccgp_zb_gy",
     "db": "DataCollectV1"
   },
   "fields": {
     "title": {"xpath":"//h2//text()"},
     "pubtime": {"xpath":"//span[@id='pubTime']"},
     "content": {"xpath":"//div[@class='table']"},
-    "site_name": {"value":"道真自治县人民政府"},
-    "author": {"value":"道真自治县人民政府"},
-    "remarks": {"value":"12123123"}
+    "site_name": {"value":"中国政府采购网"},
+    "author": {"value":"中国政府采购网-贵州中标信息"},
+    "remarks": {"value":"520000000000"}
   }
 }
