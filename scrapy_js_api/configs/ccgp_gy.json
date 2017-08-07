@@ -1,0 +1,38 @@
+{
+  "urllist": {
+    "pg": 1,
+    "pages": [
+      5
+    ],
+    "time_day": 3,
+    "urls": [
+      "http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index={page_index}&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=0&dbselect=bidx&kw=&start_time={today}&end_time={day}&timeType=1&displayZone=%E8%B4%B5%E5%B7%9E%E7%9C%81&zoneId=52&pppStatus=0&agentName="
+    ],
+    "rep": ""
+  },
+  "spiders": {
+    "net_spider_id": "765272f3d51fcfa59a3794f9bd770133"
+  },
+  "proxy": {
+    "path": "E:\\spider123\\proxy.txt"
+  },
+  "list_page": {
+    "xpath": "//ul[@class='vT-srch-result-list-bid']/li/a"
+  },
+  "mysql": {
+    "host": "192.168.10.156",
+    "port": 3306,
+    "user": "root",
+    "passwd": "root",
+    "tablename": "net_guiyangnews",
+    "db": "DataCollectV1"
+  },
+  "fields": {
+    "title": {"xpath":"//h2//text()"},
+    "pubtime": {"xpath":"//span[@id='pubTime']"},
+    "content": {"xpath":"//div[@class='table']"},
+    "site_name": {"value":"道真自治县人民政府"},
+    "author": {"value":"道真自治县人民政府"},
+    "remarks": {"value":"12123123"}
+  }
+}
