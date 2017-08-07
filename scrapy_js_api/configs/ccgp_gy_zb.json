@@ -25,7 +25,7 @@
     "port": 3306,
     "user": "root",
     "passwd": "root",
-    "tablename": "net_ccgp_zb_gy",
+    "tablename": "net_ccgp_zhongb_gy",
     "db": "DataCollectV1"
   },
   "fields": {

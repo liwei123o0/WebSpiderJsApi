@@ -179,7 +179,7 @@ class Selenium_Spider(object):
     # 结构化数据
     def pipelines(self):
         contents = self.items["content"].splitlines()
-        if self.conf.get("urllist").get("bidType") =="1":
+        if self.conf.get("urllist").get("bidType") == "1":
             for c in contents:
                 if re.findall(r"\s+", c):
                     c = c.split(" ")
@@ -215,7 +215,7 @@ class Selenium_Spider(object):
                     self.items["dljgdz"] = c[1]
                 if c[0] == u"代理机构联系方式":
                     self.items["dljglxfs"] = c[1]
-        if self.conf.get("urllist").get("bidType") =="7":
+        if self.conf.get("urllist").get("bidType") == "7":
             for c in contents:
                 if re.findall(r"\s+", c):
                     c = c.split(" ")
