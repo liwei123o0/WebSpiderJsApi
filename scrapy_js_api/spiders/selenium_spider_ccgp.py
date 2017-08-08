@@ -310,5 +310,5 @@ class Selenium_Spider(object):
 
 if __name__ == '__main__':
     pass
-    # Selenium_Spider(debug=False, proxy=False, path="../configs/ccgp_gy_zhaob.json").run()
+    Selenium_Spider(debug=False, proxy=False, path="../configs/ccgp_gy_zhaob.json").run()
     Selenium_Spider(debug=False, proxy=False, path="../configs/ccgp_gy_zb.json").run()
