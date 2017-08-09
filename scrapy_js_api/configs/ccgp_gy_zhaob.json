@@ -2,10 +2,10 @@
   "urllist": {
     "pg": 1,
     "pages": [
-      1
+      5
     ],
     "bidType":"1",
-    "time_day": 3,
+    "time_day": 7,
     "urls": [
       "http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index={page_index}&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=1&dbselect=bidx&kw=&start_time={today}&end_time={day}&timeType=1&displayZone=%E8%B4%B5%E5%B7%9E%E7%9C%81&zoneId=52&pppStatus=0&agentName="
     ],
