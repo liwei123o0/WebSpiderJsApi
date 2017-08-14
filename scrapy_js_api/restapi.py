@@ -41,6 +41,7 @@ class selenimu_spider(object):
 
 
 if __name__ == '__main__':
+    # 测试
     spider = ApiTest()
     api = application = falcon.API()
     api.add_route('/spider', spider)
