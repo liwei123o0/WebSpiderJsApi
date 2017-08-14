@@ -77,6 +77,7 @@ class WebSpiderJsApi(APIResource):
                            "spider_type": spider_type, "debug": debug, "webdriver": webdriver})
 
 
+# 启动
 if __name__ == "__main__":
     site = server.Site(WebSpiderJsApi())
     reactor.listenTCP(6801, site)
